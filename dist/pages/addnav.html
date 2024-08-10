@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Menu Item</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="menu-form">
+        <h2>Add New Menu Item</h2>
+        <form id="menuForm">
+            <label for="menuTitle">Menu Title:</label>
+            <input type="text" id="menuTitle" name="menuTitle" required>
+            <label for="submenuTitle">Submenu Title (optional):</label>
+            <input type="text" id="submenuTitle" name="submenuTitle">
+            <button type="submit">Add Menu Item</button>
+        </form>
+    </div>
+
+    <script >
+        // admin-script.js
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('menuForm');
+    console.log("F",form);
+    
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const menuTitle = document.getElementById('menuTitle').value;
+        const submenuTitle = document.getElementById('submenuTitle').value;
+
+        const menuItems = JSON.parse(localStorage.getItem('menuItems')) || [];
+
+        const newItem = {
+            title: menuTitle,
+            submenu: submenuTitle ? [submenuTitle] : []
+        };
+
+        menuItems.push(newItem);
+        console.log("MN",menuItems.push(newItem));
+        
+        localStorage.setItem('menuItems', JSON.stringify(menuItems));
+console.log("Local",localStorage.setItem('menuItems', JSON.stringify(menuItems)));
+
+        form.reset();
+    });
+});
+
+    </script>
+</body>
+</html>
