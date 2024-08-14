@@ -3,9 +3,9 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>AdminLTE 4 | General Form Elements</title><!--begin::Primary Meta Tags-->
+    <title>AdminLTE 4 | Simple Tables</title><!--begin::Primary Meta Tags-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="AdminLTE 4 | General Form Elements">
+    <meta name="title" content="AdminLTE 4 | Simple Tables">
     <meta name="author" content="ColorlibHQ">
     <meta name="description" content="AdminLTE is a Free Bootstrap 5 Admin Dashboard, 30 example pages using Vanilla JS.">
     <meta name="keywords" content="bootstrap 5, bootstrap, bootstrap 5 admin dashboard, bootstrap 5 dashboard, bootstrap 5 charts, bootstrap 5 calendar, bootstrap 5 datepicker, bootstrap 5 tables, bootstrap 5 datatable, vanilla js datatable, colorlibhq, colorlibhq dashboard, colorlibhq admin dashboard"><!--end::Primary Meta Tags--><!--begin::Fonts-->
@@ -13,12 +13,19 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.3.0/styles/overlayscrollbars.min.css" integrity="sha256-dSokZseQNT08wYEWiz5iLI8QPlKxG+TswNRD8k35cpg=" crossorigin="anonymous"><!--end::Third Party Plugin(OverlayScrollbars)--><!--begin::Third Party Plugin(Bootstrap Icons)-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.min.css" integrity="sha256-Qsx5lrStHZyR9REqhUF8iQt73X06c8LGIUPzpOhwRrI=" crossorigin="anonymous"><!--end::Third Party Plugin(Bootstrap Icons)--><!--begin::Required Plugin(AdminLTE)-->
     <link rel="stylesheet" href="../../../dist/css/adminlte.css"><!--end::Required Plugin(AdminLTE)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <style>
+        select.action-dropdown {
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+    </style>
+
 </head> <!--end::Head--> <!--begin::Body-->
 
 <body class="layout-fixed sidebar-expand-lg bg-body-tertiary"> <!--begin::App Wrapper-->
     <div class="app-wrapper"> <!--begin::Header-->
-
-<!-- Navbar -->
         <nav class="app-header navbar navbar-expand bg-body"> <!--begin::Container-->
             <div class="container-fluid"> <!--begin::Start Navbar Links-->
                 <ul class="navbar-nav">
@@ -110,7 +117,8 @@
             </div> <!--end::Container-->
         </nav> <!--end::Header--> <!--begin::Sidebar-->
 
-<!-- SIDEBAR -->
+<!-- Sidebar -->
+
 <aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark"> <!--begin::Sidebar Brand-->
     <div class="sidebar-brand"> <!--begin::Brand Link--> <a href="/dist/pages/deshboard.html" class="brand-link"> <!--begin::Brand Image--> <img src="/dist/assets/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image opacity-75 shadow"> <!--end::Brand Image--> <!--begin::Brand Text--> <span class="brand-text fw-light">AdminLTE 4</span> <!--end::Brand Text--> </a> <!--end::Brand Link--> </div> <!--end::Sidebar Brand--> <!--begin::Sidebar Wrapper-->
     <div class="sidebar-wrapper">
@@ -130,10 +138,10 @@
                     </p>
                 </a>
                 <ul class="nav nav-treeview">
-                    <li class="nav-item"> <a href="../portfolio/addcategory.html" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
+                    <li class="nav-item"> <a href="/dist/pages/portfolio/addcategory.html" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
                             <p>Add Category</p>
                         </a> </li>
-                    <li class="nav-item"> <a href="../portfolio/addproject.html" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
+                    <li class="nav-item"> <a href="/dist/pages/portfolio/addproject.html" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
                             <p>Add Project</p>
                         </a> </li>
                         <li class="nav-item"> <a href="/dist/pages/portfolio/addtechnology.html" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
@@ -199,7 +207,7 @@
                     </p>
                 </a>
                 <ul class="nav nav-treeview">
-                    <li class="nav-item"> <a href="../forms/general.html" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
+                    <li class="nav-item"> <a href="/dist/pages/forms/general.html" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
                             <p>General Elements</p>
                         </a> </li>
                 </ul>
@@ -211,7 +219,7 @@
                     </p>
                 </a>
                 <ul class="nav nav-treeview">
-                    <li class="nav-item"> <a href="../../tables/simple.html" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
+                    <li class="nav-item"> <a href="/dist/pages/tables/simple.html" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
                             <p>Simple Tables</p>
                         </a> </li>
                 </ul>
@@ -237,20 +245,22 @@
     </div> <!--end::Sidebar Wrapper-->
 </aside> <!--end::Sidebar--> <!--begin::App Main-->
 
-
-<!-- APP CONTENT -->
+<!-- App Content -->
         <main class="app-main"> <!--begin::App Content Header-->
             <div class="app-content-header"> <!--begin::Container-->
                 <div class="container-fluid"> <!--begin::Row-->
                     <div class="row">
-                        <div class="col-sm-6">
-                            <h3 class="mb-0">Add Category</h3>
+                        <div class="col-sm-6 mt-2">
+                            <div>
+                                <a href="/dist/pages/User/adduser.html" class="btn btn-danger">Add
+                                    User</a>
+                            </div>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-end">
                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">
-                                    Add Category
+                                    View User
                                 </li>
                             </ol>
                         </div>
@@ -259,46 +269,72 @@
             </div> <!--end::App Content Header--> <!--begin::App Content-->
             <div class="app-content"> <!--begin::Container-->
                 <div class="container-fluid"> <!--begin::Row-->
-                    <div class="row g-4"> <!--begin::Col-->
-                        <div class="col-12">
-                            <div>
-                                <a href="/dist/pages/viewall/viewallcategory.html" class="btn btn-danger">View
-                                    Category</a>                            
-                                </div>
-                        </div> <!--end::Col--> <!--begin::Col-->
-                        
-
-
-                        <!--begin::Different Height-->
-                            <div class="col-md-6" style="margin-left: 150px;">
-                                <div class="card card-primary card-outline mb-4">
-                                    <form>
-                                        <div class="card-body">
-                                            <div class="mb-3"> <label class="form-label">Category Name</label> <input
-                                                    type="text" class="form-control" placeholder="Enter Category">
-                                                <div class="form-text">
-                                                </div>
-                                            
-                                                <div class="mt-4">  <button type="submit" class=" btn btn-success">Submit</button> </div> <!--end::Footer-->
-
-                                           
-                                            
-    
-    
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        
+                    <div class="row">
+                    <table class="table table-borderless mt-4">
+                        <thead>
+                          <tr>
+                            <th scope="col">srn.</th>
+                            <th scope="col">User Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Projects</th>
+                            <th scope="col">Industry</th>
+                            <th scope="col">Action</th>
+                         </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                            <td>
+                                <select class="action-dropdown" data-id="1">
+                                    <option value="">Actions</option>
+                                    <option value="update">Update</option>
+                                    <option value="delete">Delete</option>
+                                </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td>@mdo</td>
+                            <td>
+                                <select class="action-dropdown" data-id="2">
+                                    <option value="">Actions</option>
+                                    <option value="update">Update</option>
+                                    <option value="delete">Delete</option>
+                                </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td>@mdo</td>
+                            <td>
+                                <select class="action-dropdown" data-id="3">
+                                    <option value="">Actions</option>
+                                    <option value="update">Update</option>
+                                    <option value="delete">Delete</option>
+                                </select>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    
                         
                     </div> <!--end::Row-->
                 </div> <!--end::Container-->
             </div> <!--end::App Content-->
         </main> <!--end::App Main--> <!--begin::Footer-->
 
-<!-- FOOTER -->
+
+<!-- Footer -->
         <footer class="app-footer"> <!--begin::To the end-->
             <div class="float-end d-none d-sm-inline">Anything you want</div> <!--end::To the end--> <!--begin::Copyright--> <strong>
                 Copyright &copy; 2014-2024&nbsp;
@@ -312,7 +348,45 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha256-whL0tQWoY1Ku1iskqPFvmZ+CHsvmRWx/PIoEvIeWh4I=" crossorigin="anonymous"></script> <!--end::Required Plugin(popperjs for Bootstrap 5)--><!--begin::Required Plugin(Bootstrap 5)-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha256-YMa+wAM6QkVyz999odX7lPRxkoYAan8suedu4k2Zur8=" crossorigin="anonymous"></script> <!--end::Required Plugin(Bootstrap 5)--><!--begin::Required Plugin(AdminLTE)-->
     <script src="../../../dist/js/adminlte.js"></script> <!--end::Required Plugin(AdminLTE)--><!--begin::OverlayScrollbars Configure-->
+   
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const dropdowns = document.querySelectorAll('.action-dropdown');
+
+    dropdowns.forEach(dropdown => {
+        dropdown.addEventListener('change', function() {
+            const action = this.value;
+            const id = this.getAttribute('data-id');
+
+            if (action === 'update') {
+                updateRow(id);
+            } else if (action === 'delete') {
+                deleteRow(id);
+            }
+
+            // Reset the dropdown
+            this.value = '';
+        });
+    });
+
+    // function updateRow(id) {
+    //     alert('Update action for ID: ' + id);
+    //     // Implement your update logic here
+    // }
+
+    // function deleteRow(id) {
+    //     if (confirm('Are you sure you want to delete this row?')) {
+    //         // Remove the row from the table
+    //         const row = document.querySelector(`.action-dropdown[data-id="${id}"]`).closest('tr');
+    //         row.remove();
+    //         alert('Row with ID ' + id + ' has been deleted.');
+    //     }
+    // }
+});
+
+    </script>
+   
+   <script>
         const SELECTOR_SIDEBAR_WRAPPER = ".sidebar-wrapper";
         const Default = {
             scrollbarTheme: "os-theme-light",
