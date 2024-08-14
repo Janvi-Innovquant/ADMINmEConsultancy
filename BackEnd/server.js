@@ -40,6 +40,7 @@ app.use("/project",ProjectRoute)
 app.use("/category",CategoryRoute)
 app.use("/technology",TechnologyRoute)
 app.use("/industry",IndustryRoute)
+app.use("/admin",UserRoute)
 // app.use("/user",UserRoute)
 
 app.listen(port,()=>{

@@ -202,77 +202,6 @@
                                     </a> </li>
                             </ul>
                         </li>
-                        <!-- <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-clipboard-fill"></i>
-                    <p>
-                        Layout Options
-                        <span class="nav-badge badge text-bg-secondary me-3">6</span> <i class="nav-arrow bi bi-chevron-right"></i>
-                    </p>
-                </a>
-                <ul class="nav nav-treeview">
-                    <li class="nav-item"> <a href="../../layout/unfixed-sidebar.html" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
-                            <p>Default Sidebar</p>
-                        </a> </li>
-                    <li class="nav-item"> <a href="../../layout/fixed-sidebar.html" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
-                            <p>Fixed Sidebar</p>
-                        </a> </li>
-                    <li class="nav-item"> <a href="../../layout/fixed-complete.html" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
-                            <p>Fixed Complete</p>
-                        </a> </li>
-                    <li class="nav-item"> <a href="../../layout/sidebar-mini.html" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
-                            <p>Sidebar Mini</p>
-                        </a> </li>
-                    <li class="nav-item"> <a href="../../layout/collapsed-sidebar.html" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
-                            <p>Sidebar Mini <small>+ Collapsed</small></p>
-                        </a> </li>
-                    <li class="nav-item"> <a href="../../layout/logo-switch.html" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
-                            <p>Sidebar Mini <small>+ Logo Switch</small></p>
-                        </a> </li>
-                    <li class="nav-item"> <a href="../../layout/layout-rtl.html" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
-                            <p>Layout RTL</p>
-                        </a> </li>
-                </ul>
-            </li> -->
-                        <!-- <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-tree-fill"></i>
-                    <p>
-                        UI Elements
-                        <i class="nav-arrow bi bi-chevron-right"></i>
-                    </p>
-                </a>
-                <ul class="nav nav-treeview">
-                    <li class="nav-item"> <a href="../../UI/general.html" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
-                            <p>General</p>
-                        </a> </li>
-                    <li class="nav-item"> <a href="../../UI/timeline.html" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
-                            <p>Timeline</p>
-                        </a> </li>
-                </ul>
-            </li> -->
-                        <!-- <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-pencil-square"></i>
-                                <p>
-                                    Forms
-                                    <i class="nav-arrow bi bi-chevron-right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item"> <a href="../forms/general.html" class="nav-link"> <i
-                                            class="nav-icon bi bi-circle"></i>
-                                        <p>General Elements</p>
-                                    </a> </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-table"></i>
-                                <p>
-                                    Tables
-                                    <i class="nav-arrow bi bi-chevron-right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item"> <a href="../../tables/simple.html" class="nav-link"> <i
-                                            class="nav-icon bi bi-circle"></i>
-                                        <p>Simple Tables</p>
-                                    </a> </li>
-                            </ul>
-                        </li> -->
                         <li class="nav-header">User</li>
                         <li class="nav-item"> <a href="#" class="nav-link"> <i
                                     class="nav-icon bi bi-box-arrow-in-right"></i>
@@ -288,6 +217,13 @@
                                     </p>
                                 </a>
                             </li>
+                            <li class="nav-item"> <a href="/dist/pages/User/login.html" class="nav-link"> <i
+                                class="nav-icon bi bi-circle"></i>
+                            <p>
+                                Admin login
+                            </p>
+                        </a>
+                    </li>
                             </ul>
                         </li>
                     </ul> <!--end::Sidebar Menu-->
@@ -325,11 +261,16 @@
             <div class="app-content"> <!--begin::Container-->
                 <div class="container-fluid"> <!--begin::Row-->
                     <div class="row g-4"> <!--begin::Col-->
-                        
-                        <div class="col-md-6">
+                        <form id="saveform" enctype="multipart/form-data" style="display: flex;">
+                        <div class="col-md-6" style="margin-right: 15px;">
                             <div class="card card-primary card-outline">
-                                <form>
+                                
                                     <div class="card-body">
+                                        <div class="mb-3"> <label class="form-label">Project Heading</label> <input
+                                            type="text" class="form-control">
+                                        <div class="form-text">
+                                        </div>
+                                    </div>
                                         <div class="mb-3"> <label class="form-label">Project Name</label> <input
                                                 type="text" class="form-control">
                                             <div class="form-text">
@@ -350,13 +291,11 @@
                                                 Details</label><textarea name="myeditor" placeholder="Product Details"
                                                 class="form-control" rows="12" cols="50"></textarea>
                                         </div>
-
-
                                     </div>
-                                </form>
                             </div>
                         </div>
-
+                        
+                       
                         <div class="col-md-6">
                             <div class="card card-success card-outline mb-4">
                                 <div class="card-body">
@@ -366,7 +305,7 @@
                                             <option value="css">CSS</option>
                                             <option value="javascript">JavaScript</option>
                                             <option value="python">Python</option>
-                                            <option value="java">Java</option>
+                                             <option value="java">Java</option>
                                             <option value="php">PHP</option>
                                             <option value="Angular">Angular</option>
                                             <option value="Hybris">Hybris</option>
@@ -431,17 +370,17 @@
                                         <button type="button" class="btn btn-secondary" id="add-image-btn">Add
                                             Image</button>
                                     </div>
-
-
-
+                                  </div>
+                                  </div>
+                                  <div style="margin-left: 380px;" class="mb-6">
+                                    <button type="submit"  class="btn btn-success">Submit</button>
                                 </div>
-
                             </div>
-                            <div style="margin-left: 380px;" class="mb-6">
-                                <button type="submit"  class="btn btn-success">Submit</button>
-                            </div>
-                        </div>
+                           
+                        </form>
                     </div>
+
+                   
                 </div>
 
 
@@ -449,144 +388,6 @@
 
 
 
-                <!-- <div class="card card-warning card-outline mb-4"> 
-                                <div class="card-header">
-                                    <div class="card-title">Horizontal Form</div>
-                                </div> 
-                                <form> 
-                                    <div class="card-body">
-                                        <div class="row mb-3"> <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                                            <div class="col-sm-10"> <input type="email" class="form-control" id="inputEmail3"> </div>
-                                        </div>
-                                        <div class="row mb-3"> <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                                            <div class="col-sm-10"> <input type="password" class="form-control" id="inputPassword3"> </div>
-                                        </div>
-                                        <fieldset class="row mb-3">
-                                            <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-                                            <div class="col-sm-10">
-                                                <div class="form-check"> <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked> <label class="form-check-label" for="gridRadios1">
-                                                        First radio
-                                                    </label> </div>
-                                                <div class="form-check"> <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2"> <label class="form-check-label" for="gridRadios2">
-                                                        Second radio
-                                                    </label> </div>
-                                                <div class="form-check disabled"> <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled> <label class="form-check-label" for="gridRadios3">
-                                                        Third disabled radio
-                                                    </label> </div>
-                                            </div>
-                                        </fieldset>
-                                        <div class="row mb-3">
-                                            <div class="col-sm-10 offset-sm-2">
-                                                <div class="form-check"> <input class="form-check-input" type="checkbox" id="gridCheck1"> <label class="form-check-label" for="gridCheck1">
-                                                        Example checkbox
-                                                    </label> </div>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                    <div class="card-footer"> <button type="submit" class="btn btn-warning">Sign in</button> <button type="submit" class="btn float-end">Cancel</button> </div> 
-                                </form> 
-                            </div>  -->
-
-
-                <!-- <div class="col-md-6"> 
-                            <div class="card card-secondary card-outline mb-4"> 
-                                <div class="card-header">
-                                    <div class="card-title">Different Height</div>
-                                </div> 
-                                <div class="card-body"> <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example"> <br> <input class="form-control" type="text" placeholder="Default input" aria-label="default input example"> <br> <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example"> 
-                                </div>  
-                           </div> 
-                          </div> -->
-
-                <!-- <div class="card card-danger card-outline mb-4"> 
-                                <div class="card-header">
-                                    <div class="card-title">Different Width</div>
-                                </div> 
-                                <div class="card-body"> 
-                                    <div class="row">
-                                        <div class="col-3"> <input type="text" class="form-control" placeholder=".col-3"> </div> 
-                                        <div class="col-4"> <input type="text" class="form-control" placeholder=".col-4"> </div> 
-                                        <div class="col-5"> <input type="text" class="form-control" placeholder=".col-5"> </div> 
-                                    </div> 
-                                </div> 
-                            </div>   -->
-
-
-                <!-- <div class="card card-info card-outline mb-4"> 
-                                <div class="card-header">
-                                    <div class="card-title">Form Validation</div>
-                                </div> 
-                                <form class="needs-validation" novalidate> 
-                                    <div class="card-body"> 
-                                        <div class="row g-3">
-                                            <div class="col-md-6"> <label for="validationCustom01" class="form-label">First name</label> <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-                                                <div class="valid-feedback">Looks good!</div>
-                                            </div> 
-                                            <div class="col-md-6"> <label for="validationCustom02" class="form-label">Last name</label> <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-                                                <div class="valid-feedback">Looks good!</div>
-                                            </div> 
-                                            <div class="col-md-6"> <label for="validationCustomUsername" class="form-label">Username</label>
-                                                <div class="input-group has-validation"> <span class="input-group-text" id="inputGroupPrepend">@</span> <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-                                                    <div class="invalid-feedback">
-                                                        Please choose a username.
-                                                    </div>
-                                                </div>
-                                            </div> 
-                                            <div class="col-md-6"> <label for="validationCustom03" class="form-label">City</label> <input type="text" class="form-control" id="validationCustom03" required>
-                                                <div class="invalid-feedback">
-                                                    Please provide a valid city.
-                                                </div>
-                                            </div> 
-                                            <div class="col-md-6"> <label for="validationCustom04" class="form-label">State</label> <select class="form-select" id="validationCustom04" required>
-                                                    <option selected disabled value="">Choose...</option>
-                                                    <option>...</option>
-                                                </select>
-                                                <div class="invalid-feedback">
-                                                    Please select a valid state.
-                                                </div>
-                                            </div> 
-                                            <div class="col-md-6"> <label for="validationCustom05" class="form-label">Zip</label> <input type="text" class="form-control" id="validationCustom05" required>
-                                                <div class="invalid-feedback">
-                                                    Please provide a valid zip.
-                                                </div>
-                                            </div> 
-                                            <div class="col-12">
-                                                <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required> <label class="form-check-label" for="invalidCheck">
-                                                        Agree to terms and conditions
-                                                    </label>
-                                                    <div class="invalid-feedback">
-                                                        You must agree before submitting.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> 
-                                    </div> 
-                                    <div class="card-footer"> <button class="btn btn-info" type="submit">Submit form</button> </div> 
-                            </form> 
-                                <script>
-                                    (() => {
-                                        "use strict";
-
-                                        const forms =
-                                            document.querySelectorAll(".needs-validation");
-
-                                        Array.from(forms).forEach((form) => {
-                                            form.addEventListener(
-                                                "submit",
-                                                (event) => {
-                                                    if (!form.checkValidity()) {
-                                                        event.preventDefault();
-                                                        event.stopPropagation();
-                                                    }
-
-                                                    form.classList.add("was-validated");
-                                                },
-                                                false
-                                            );
-                                        });
-                                    })();
-                                </script>
-                            </div>  -->
 
 
 
@@ -668,6 +469,67 @@
        renderChoiceLimit:5
      }); 
 });
+</script>
+
+
+<script>
+   document.addEventListener("DOMContentLoaded", () => {
+    // Form and elements
+    const form = document.getElementById('saveform');
+    const addImageBtn = document.getElementById('add-image-btn');
+    const imageContainer = document.getElementById('image-container');
+
+    // Handle form submission
+    form.addEventListener('submit', async (event) => {
+        event.preventDefault(); // Prevent default form submission
+
+        // Create FormData object
+        const formData = new FormData(form);
+
+        // Gather all file inputs
+        const fileInputs = imageContainer.querySelectorAll('input[type="file"]');
+        fileInputs.forEach(fileInput => {
+            if (fileInput.files.length > 0) {
+                // Append each file to FormData
+                Array.from(fileInput.files).forEach(file => {
+                    formData.append('project_images[]', file);
+                });
+            }
+        });
+
+        try {
+            // Send data to the server
+            const response = await fetch('http://localhost:2345/project/createproject', {
+                method: 'POST',
+                body: formData
+            });
+
+            const result = await response.json();
+
+            if (response.ok) {
+                // Handle success
+                alert('Project saved successfully!');
+            } else {
+                // Handle server errors
+                alert('Error saving project: ' + result.message);
+            }
+        } catch (error) {
+            // Handle network errors
+            alert('Network error: ' + error.message);
+        }
+    });
+
+    // Handle adding more image inputs
+    addImageBtn.addEventListener('click', () => {
+        const newImageInput = document.createElement('div');
+        newImageInput.classList.add('mb-3');
+        newImageInput.innerHTML = `<input type="file" class="form-control" name="project_images[]">`;
+        imageContainer.appendChild(newImageInput);
+    });
+});
+
+         
+        
 </script>
 
     <script>

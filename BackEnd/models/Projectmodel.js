@@ -35,9 +35,9 @@ const Project = new Schema({
     endDate:{
         type:String
     },
-    image:{
+    image:[{
         type:String
-    }
+    }]
 },
 {
     collection:'Project'
