@@ -1,9 +1,9 @@
 const express = require('express')
 const route = express.Router()
-
+const upload = require("../middleware/upload")
 const ProjectController = require("../controllers/project.controller")
 
-route.post("/createproject", ProjectController.Createproject)
+route.post("/createproject",upload.array('image', 10), ProjectController.Createproject)
 route.get("/getprojectbyId/:id",ProjectController.getProjectById)
 route.get("/getallproject",ProjectController.getallProject)
 route.put("/updateproject/:id",ProjectController.UpdateProject)

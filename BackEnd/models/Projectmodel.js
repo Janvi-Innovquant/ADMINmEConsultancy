@@ -4,12 +4,12 @@ const Schema = mongoose.Schema
 const Project = new Schema({
     projectName : {
         type:String,
-        required:true
+        // required:true
     },
     category : {
         type:mongoose.Schema.Types.ObjectId,
         ref:'Category',
-        required:true
+        // required:true
     },
     projectDetails : {
         type:String,
@@ -18,13 +18,13 @@ const Project = new Schema({
         {
          type:mongoose.Schema.Types.ObjectId,
          ref:'Technology',
-         required:true
+        //  required:true
         }
     ],
     industry:{
         type:mongoose.Schema.Types.ObjectId,
         ref:'Industry',
-        required:true
+        // required:true
     },
     country:{
         type:String,

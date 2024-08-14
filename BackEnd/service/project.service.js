@@ -1,13 +1,14 @@
 const { default: mongoose } = require("mongoose");
 const Project = require("../models/Projectmodel")
 
-const createproject = async(body) => {
+const createproject = async(projectData) => {
     try {
-        const data = await Project.create(body)
-         return data
+        // Create a new project with the provided data
+        const project = await Project.create(projectData);
+        return project;
     } catch (error) {
-        console.log(error);
-        
+        console.error("Error creating project:", error);
+        throw new Error('Error creating project');
     }
  }
 
